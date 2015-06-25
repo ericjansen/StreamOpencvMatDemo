@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.server2.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <Button
+        android:id="@+id/startsocket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startsocket"
+        android:text="start server socket" />
+
+   <ImageView android:layout_width="320dp"
+              android:id="@+id/image"
+              android:layout_height="240dp"/>
+
+
+</LinearLayout>
+
