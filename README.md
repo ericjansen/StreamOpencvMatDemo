@@ -1,6 +1,6 @@
 #stream opencv Mat to pc or android phone though tcp
 it runs like follows:
-![](demo.gif)
+![](http://i.imgur.com/yN4YAlL.gif)
 
 #sent to pc server
 edit `streamMatClient\main.cpp` server port
