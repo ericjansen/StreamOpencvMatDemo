@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Streamopencvmatdemo by wzyuliyang</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/wzyuliyang/StreamOpencvMatDemo">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Streamopencvmatdemo</h1>
+            <h2>stream opencv mat thought tcp from pc client to pc server or android server</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/wzyuliyang/StreamOpencvMatDemo/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/wzyuliyang/StreamOpencvMatDemo/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>
+<a id="stream-opencv-mat-to-pc-or-android-phone-though-tcp" class="anchor" href="#stream-opencv-mat-to-pc-or-android-phone-though-tcp" aria-hidden="true"><span class="octicon octicon-link"></span></a>stream opencv Mat to pc or android phone though tcp</h1>
+
+<p>it runs like follows:
+<img src="demo.gif" alt=""></p>
+
+<h1>
+<a id="sent-to-pc-server" class="anchor" href="#sent-to-pc-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>sent to pc server</h1>
+
+<p>edit <code>streamMatClient\main.cpp</code> server port</p>
+
+<pre><code>tcp::endpoint end_point(boost::asio::ip::address::from_string("127.0.0.1"), 3200);
+</code></pre>
+
+<h1>
+<a id="sent-to-android-server" class="anchor" href="#sent-to-android-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>sent to android server</h1>
+
+<p>edit <code>streamMatClient\main.cpp</code> server port</p>
+
+<pre><code>tcp::endpoint end_point(boost::asio::ip::address::from_string("10.104.3.196"), 3200);  // 10.104.3.196 is my android phone ip ,plea edit it to your phones
+</code></pre>
+
+<h1>
+<a id="android-server" class="anchor" href="#android-server" aria-hidden="true"><span class="octicon octicon-link"></span></a>android server</h1>
+
+<p>androidServer.apk is pre-compiled on my android phone(4.2.2 api)</p>
+
+<p>just clicked the start server socket button to run the android server and  it will get the image from pc client(streamMatClient)</p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/wzyuliyang">wzyuliyang</a> can be found on <a href="https://github.com/wzyuliyang/StreamOpencvMatDemo">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
